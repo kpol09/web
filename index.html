@@ -1,50 +1,65 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" href=imagenes/ojo.png type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/ojo.png" type="image/x-icon">
+    <title>K-POL</title>
     <style>
         body {
             background-color: rgb(72, 88, 180);
             text-align: center;
             margin: 0;
+            font-family: sans-serif; /* Fuente más legible en móviles */
         }
-        b {
+
+        h1 {
             color: white;
         }
+
         video {
-            width: 50%;
-            max-width: 600px;
+            width: 90%; /* Ocupa casi todo el ancho en móviles */
+            max-width: 600px; /* Ancho máximo en pantallas grandes */
             height: auto;
         }
+
         a {
             color: white;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 1.2em; /* Tamaño de fuente relativo (mejor para móviles) */
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 20px;
         }
+
         a img {
-            width: 20px;
-            height: 20px;
+            width: 2em; /* Tamaño relativo para la imagen */
+            height: 2em;
             margin-right: 10px;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        /* Media query para pantallas más pequeñas (móviles) */
+        @media (max-width: 600px) {
+            a {
+                font-size: 1em; /* Ajusta el tamaño de fuente en móviles */
+            }
+        }
     </style>
-    <title>K-POL</title>
 </head>
 <body>
-    <b><h1>HOLA</h1></b>
-    
-    <video width="640" height="360" controls>
+    <h1>HOLA</h1>
+
+    <video controls>
         <source src="imagenes/TE MIRE.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de video.
     </video>
 
     <a href="https://www.instagram.com/vb09.i?igsh=dXNyaWNiOHZvbjl0" target="_blank">
-        <img src=imagenes/insta.png alt="instagram">
+        <img src="imagenes/insta.png" alt="instagram">
         vb09.i
     </a>
 </body>
