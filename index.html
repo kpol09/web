@@ -9,23 +9,29 @@
             background-color: rgb(72, 88, 180);
             text-align: center;
             margin: 0;
-            font-family: sans-serif; /* Fuente más legible en móviles */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         h1 {
             color: white;
+            margin-bottom: 20px;
         }
 
         video {
-            width: 90%; /* Ocupa casi todo el ancho en móviles */
-            max-width: 600px; /* Ancho máximo en pantallas grandes */
+            width: 90%;
+            max-width: 600px;
             height: auto;
         }
 
         a {
             color: white;
             text-decoration: none;
-            font-size: 1.2em; /* Tamaño de fuente relativo (mejor para móviles) */
+            font-size: 1.5em; /* Tamaño de fuente más grande */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -33,8 +39,8 @@
         }
 
         a img {
-            width: 2em; /* Tamaño relativo para la imagen */
-            height: 2em;
+            width: 2.5em; /* Tamaño de imagen más grande */
+            height: 2.5em;
             margin-right: 10px;
         }
 
@@ -42,10 +48,9 @@
             text-decoration: underline;
         }
 
-        /* Media query para pantallas más pequeñas (móviles) */
         @media (max-width: 600px) {
             a {
-                font-size: 1em; /* Ajusta el tamaño de fuente en móviles */
+                font-size: 1.2em; /* Ajusta el tamaño de fuente en móviles */
             }
         }
     </style>
