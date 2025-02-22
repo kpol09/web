@@ -18,9 +18,16 @@
         }
 
         h1 {
-            color: white;
-            margin-bottom: 20px;
-        }
+    color: white;
+    position: fixed; /* Fija el elemento en su posición */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 50%; /* Lo centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: rgba(72, 88, 180, 0.8); /* Fondo semi-transparente */
+    padding: 10px 0; /* Espacio arriba y abajo */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
 
         video {
             width: 90%;
